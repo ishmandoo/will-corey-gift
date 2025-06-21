@@ -24,4 +24,33 @@ const x = setInterval(function () {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
     }
-}, 1000); 
+}, 1000);
+
+function showSection(section) {
+    document.getElementById('home').style.display = section === 'home' ? '' : 'none';
+    document.getElementById('story').style.display = section === 'story' ? '' : 'none';
+    document.getElementById('schedule').style.display = section === 'schedule' ? '' : 'none';
+    document.getElementById('qa').style.display = section === 'qa' ? '' : 'none';
+
+    document.getElementById('nav-home').classList.toggle('active', section === 'home');
+    document.getElementById('nav-story').classList.toggle('active', section === 'story');
+    document.getElementById('nav-schedule').classList.toggle('active', section === 'schedule');
+    document.getElementById('nav-qa').classList.toggle('active', section === 'qa');
+}
+
+document.getElementById('nav-home').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('home');
+});
+document.getElementById('nav-story').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('story');
+});
+document.getElementById('nav-schedule').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('schedule');
+});
+document.getElementById('nav-qa').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('qa');
+}); 
