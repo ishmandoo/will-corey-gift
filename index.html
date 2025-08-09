@@ -18,14 +18,13 @@
                     <li><a href="#" id="nav-home" class="active">Home</a></li>
                     <li><a href="#" id="nav-rsvp">RSVP</a></li>
                     <li><a href="#" id="nav-story">Story</a></li>
-                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="#" id="nav-accommodations">Accommodations</a></li>
                     <li><a href="#" id="nav-schedule">Schedule</a></li>
                     <li><a href="#">Registry</a></li>
-                    <li><a href="#">Travel</a></li>
+                    <li><a href="#" id="nav-travel">Travel</a></li>
                     <li><a href="#" id="nav-qa">Q & A</a></li>
                     <li><a href="#">Moments</a></li>
                 </ul>
-                <a href="#" class="get-the-app">Get the app</a>
             </nav>
             <main>
                 <section id="home">
@@ -38,14 +37,22 @@
                     <a href="#" class="rsvp-button">RSVP</a>
                     <p class="welcome-message">Welcome to our wedding website! We hope you'll join us at the end of August :)</p>
                 </section>
+                <section id="rsvp" style="display:none;" class="story-section">
+                    <h2 class="story-title">RSVP</h2>
+                    <p class="story-text">Please RSVP by July 20th, so we can have an accurate headcount. :)<br>NOTE: RSVP will happen through the website so that you can select your meal choices. This is not open yet, but it will open once the invitations are sent out!</p>
+                </section>
                 <section id="story" style="display:none;" class="story-section">
                     <img src="assets/story_photo.webp" alt="Story Photo" class="main-photo story-image">
                     <h2 class="story-title">Story</h2>
                     <p class="story-text">We met the old fashioned way: on the internet!</p>
                     <p class="story-text">After going on several dates in Boston from breakfast sandwiches to art museums to movie night, it was clear we were a good fit :)</p>
+
                     <h2 class="story-title">Tidbits</h2>
+
                     <h3>Who made the first move? How?</h3>
                     <p class="story-text">Will's opening line was, "that's a small moon" on a photo of Corey standing in front of a large photorealistic moon globe. This moon was indeed small in comparison to the real moon. Off to a good start!</p>
+                    <h3>What was your first date?</h3>
+                    <p class="story-text"><a href="#" id="nav-petsitting-puzzle">We spent the evening petsitting five demanding animals. Each pet wanted a specific sandwich from Mike & Patty's, a crocheted comfort item, a beloved plant buddo, and to watch their favorite season of Taskmaster.</a></p>
                     <h3>What was your most memorable date?</h3>
                     <p class="story-text">On our third date, we went to the Museum of Fine Arts in Boston. It was a beautiful day and Will suggested that we try to make our way there without looking at google maps, simply relying on memory and instinct.</p>
                     <p class="story-text">After a perfectly meandering walk and agreeing that stumbled-upon subway maps were within the rules, we made it to the museum.</p>
@@ -70,45 +77,64 @@
                     <p class="story-text">The flamboyant cuttlefish is a small, brightly colored cephalopod. It grows up to about 3 inches and has stunning purple, yellow, and white coloring. Cuttlefish change color rapidly and dynamically through cells called chromatophores that expand and contract, resulting in mesmerizing displays.</p>
                     <p class="story-text">In order to float, all cuttlefish have a porous "cuttlebone". Due to the small size of the flamboyant cuttlefish cuttlebone, they can float only for a short time. Thus, they tend to waddle along the sea floor. It is very cute.</p>
                 </section>
+                <section id="accommodations" style="display:none;" class="story-section">
+                    <h2 class="story-title">Accommodations</h2>
+                    <p class="story-text">Looking for a place to stay nearby? We've added some hotel recommendations to make your visit as comfortable and convenient as possible!</p>
+                    <p class="story-text">We have room blocks or guaranteed rates at the Fairmont Copley Plaza, the Porter Square Hotel, and Hotel 1868.</p>
+                </section>
                 <section id="schedule" style="display:none;" class="schedule-section">
                     <img src="assets/schedule_photo.webp" alt="Schedule Photo" class="main-photo schedule-image">
                     <h2 class="schedule-title">Schedule</h2>
-                    <button class="unlock-schedule-btn" disabled>Unlock Your Schedule</button>
                     <div class="schedule-date">Sunday, August 31, 2025</div>
                     <hr class="schedule-divider">
 
                     <!-- Event 1 -->
                     <div class="schedule-event">
                         <div class="schedule-event-left">
-                            <div class="schedule-time">4:00 PM to 4:15 PM</div>
+                            <div class="schedule-time">6:00 PM to 12:00 AM</div>
                             <button class="add-calendar-btn" disabled><span class="calendar-icon">&#128197;</span> Add to Calendar</button>
                         </div>
                         <div class="schedule-event-right">
-                            <div class="schedule-event-title">The Ketubah Signing</div>
+                            <div class="schedule-event-title">Ceremony, Cocktails, & Reception!</div>
                             <div class="schedule-details">
-                                <div class="schedule-icons"><span class="attire-icon">&#128205;</span> <a href="#" class="venue-link">Fairmont Copley Plaza Boston, Saint James Avenue, Boston, MA, USA</a></div>
+                                <p>Please join us at the Fairmont Copley Plaza Hotel in downtown Boston for our Wedding Ceremony, Cocktails, and Reception!</p>
+                                <br>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                                    <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                    <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+                                </svg>
+                                <span class="attire-icon">Cocktail Attire</span>
+                                <br>
+                                <br>
+                                Fairmont Copley Plaza Boston, Saint James Avenue, Boston, MA, USA
                             </div>
                         </div>
                     </div>
 
+                    
                     <!-- Event 2 -->
                     <div class="schedule-event">
                         <div class="schedule-event-left">
-                            <div class="schedule-time">4:15 PM to 5:00 PM</div>
+                            <div class="schedule-time">12:00 AM to 6:00 AM</div>
                             <button class="add-calendar-btn" disabled><span class="calendar-icon">&#128197;</span> Add to Calendar</button>
                         </div>
                         <div class="schedule-event-right">
-                            <div class="schedule-event-title">Rehearsal</div>
+                            <div class="schedule-event-title">Dance till you drop!</div>
                             <div class="schedule-details">
-                                <p>Please be present for our rehearsal, so that you know what to do and where to stand on our big day!</p>
-                                <div class="schedule-icons"><span class="attire-icon">&#128205;</span> <a href="#" class="venue-link">Fairmont Copley Plaza Boston, Saint James Avenue, Boston, MA, USA</a></div>
-                                <div class="schedule-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11782.85183024567!2d-71.1329683!3d42.412557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e376e56ee2b34b%3A0xf4cd141b7282151a!2sDilboy%20Pool!5e0!3m2!1sen!2sus!4v1750510396115!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                </div>
+                                <p><a href="#" id="nav-dance-puzzle">The name says it all. Once the music starts, there's no leaving the floor. No breaks. No mercy. The DJ has been instructed to play increasingly faster songs until only one remains. Hydration is discouraged; weakness will not be tolerated. Shuffle, sway, or collapse in place!</a></p>
+                                <br>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                                    <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                    <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+                                </svg>
+                                <span class="attire-icon">Neon Spandex</span>
+                                <br>
+                                <br>
+                                Fairmont Copley Plaza Boston, Saint James Avenue, Boston, MA, USA
                             </div>
                         </div>
                     </div>
 
-                    <!-- Add more events as needed -->
                 </section>
                 <section id="qa" style="display:none;" class="story-section">
                     <h2 class="story-title">Q & A</h2>
@@ -141,17 +167,110 @@
                     <h3>Is it okay to take pictures with our phones and cameras during the wedding?</h3>
                     <p class="story-text">Please refrain from taking photos during the ceremony. Once it's party time, go for it!</p>
                 </section>
+                <section id="travel" style="display:none;" class="story-section">
+                    <img src="assets/travel_photo.webp" alt="Travel Photo" class="main-photo travel-image">
+                    <div class="travel-content">
+                        <h2 class="story-title">Travel</h2>
+                        <div class="travel-block">
+                            <h3><span class="travel-icon">✈️</span> Getting In</h3>
+                            <p class="story-text">We recommend flying into the Boston Logan Airport!</p>
+                        </div>
+                        <div class="travel-block">
+                            <h3><span class="travel-icon">🚗</span> Getting Downtown</h3>
+                            <p class="story-text">Uber, Lyft, taxis, and public transit are available at the airport, as well as a rental car center.</p>
+                            <p class="story-text">To get downtown by subway, you can either:</p>
+                            <ul class="travel-list">
+                                <li>Take the Airport Shuttle to the Blue Line towards Bowdoin. To get to the Fairmont, switch to the Green Line towards Copley at the Government Center stop.</li>
+                                <li>Take the Silver Line Shuttle to South Station to transfer to the Red Line towards Alewife. To get to the Fairmont, switch to the Green Line towards Copley at the Park Street Station Stop.</li>
+                            </ul>
+                        </div>
+                        <div class="travel-block">
+                            <h3><span class="travel-icon">📅</span> Labor Day Weekend is busy in Boston!</h3>
+                            <p class="story-text">Please make your arrangements as soon as possible for the best rates and availability.<br>Not only is it Labor Day Weekend, but it's also Boston's moving day weekend -- with so many schools in the area, things book up fast!</p>
+                        </div>
+                        <div class="travel-block">
+                            <h3><span class="travel-icon">🍽️</span> Our Favorite Spots to Grab a Bite!</h3>
+                            <ul class="travel-list">
+                                <li>Ogawa Coffee makes a mean tea latte with local Mem Tea and a delicious bacon egg & cheese.</li>
+                                <li>Sam Lagrassa's make a sandwich a good size for sharing but you won't want to.</li>
+                                <li>Mike & Patty's was our third date pre-museum breakfast sammie choice. Tucked away in the historic Bay Village, it's a fun little spot. ...why yes, we do like breakfast :)</li>
+                                <li>Citrus & Salt has some delicious food and fun decor, to boot!</li>
+                                <li>Try 75 Chestnut for a delicious meal in the historic Beacon Hill neighborhood.</li>
+                            </ul>
+                        </div>
+                        <div class="travel-block">
+                            <h3><span class="travel-icon">🗺️</span> Things to do in Boston</h3>
+                            <ul class="travel-list">
+                                <li>Walk the Freedom Trail</li>
+                                <li>Visit the Museum of Fine Arts</li>
+                                <li>Explore the Boston Public Garden</li>
+                                <li>Tour Fenway Park</li>
+                                <li><a href="#" id="nav-cuddlefish-puzzle">Take a swim in Boston Harbor but watch out for the Cuddlefish!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="cuddlefish_puzzle" style="display:none;" class="story-section">
+                    <h2 class="story-title">Cuddlefish Puzzle</h2>
+                    <iframe src="https://itch.io/embed-upload/14590834?color=333333"></iframe>
+                </section>
+                <section id="petsitting_puzzle" style="display:none;" class="story-section">
+                    <h2 class="story-title">Petsitting For A Picky Pack!</h2>
+                    
+                    <div class="puzzle-content">
+                        <p class="puzzle-intro">
+                            Corey and Will are petsitting five demanding animals in their apartment. Each pet insists on a specific sandwich from Mike & Patty's, a crocheted comfort item, a beloved plant buddo, and to watch their favorite season of Taskmaster. If any demand is unmet, the pets will unite and the kitchen cabinets will fall (again).
+                        </p>
+                        
+                        <p class="puzzle-instructions">
+                            Use the clues to construct a 5x5 grid per category—or use the one at <a href="https://www.jsingler.de/apps/logikloeser/index.php?language=en#(at:s,items:!(!(Nicki,Callie,Bean,Goose,Coco),!(Baller,Thicc,'Breakfast%20Grilled%20Crack',McLustin,Fancy),!(Cuddlefish,Hat,'Racoon%20Slippers',Hoodie,Sunflowers),!(Mimosa,'Wiggle%20Cactus','Bebe%20Strawb','Terrarium%20Succulents','Another%20plant%20Will%20owns'),!('7','4','11','19','9')),ms:t,n:!(),nc:5,ni:5,p:!(),v:0)">this link</a> to figure out each pet's preferences and keep the peace!
+                        </p>
+                        
+                        <h3 class="puzzle-clues-title">Clues:</h3>
+                        <ol class="puzzle-clues">
+                            <li><strong>Bean</strong> did <em>not</em> want anything involving sunflowers, but demanded the <strong>Cuddlefish</strong> and <strong>Baller</strong> sandwich.</li>
+                            <li>The pet who loves <strong>Taskmaster Season 4</strong> prefers <strong>Breakfast Grilled Crack</strong>, but hates the <strong>Mimosa</strong> plant.</li>
+                            <li>The pet who got the <strong>McLustin</strong> sandwich also demanded the <strong>Hoodie</strong> and the <strong>Bebe Strawb</strong>.</li>
+                            <li><strong>Callie</strong> refused anything with grilled in the name, and was terrified of <strong>Raccoon Slippers</strong>, but accepted the <strong>Thicc</strong> sandwich.</li>
+                            <li>The one who picked the <strong>Terrarium Succulents</strong> also insisted on the <strong>Sunflowers</strong> and <strong>Taskmaster Season 9</strong>.</li>
+                            <li><strong>Goose</strong> insisted on watching <strong>Season 19</strong>, though she didn't like succulents or cacti.</li>
+                            <li><strong>Coco</strong> threw the <strong>Mimosa</strong> plant out the window and will <em>only</em> wear <strong>Raccoon Slippers</strong>.</li>
+                            <li>The pet who took the <strong>Fancy</strong> sandwich also got the <strong>Sunflowers</strong>, but was <em>not</em> <strong>Bean</strong> or <strong>Goose</strong>.</li>
+                            <li>The <strong>Wiggly Cactus</strong> goes with the <strong>Breakfast Grilled Crack</strong> and the <strong>Raccoon Slippers</strong>.</li>
+                            <li><strong>Callie's</strong> crochet item was the <strong>Hat</strong>, and her plant is <em>not</em> <strong>Mimosa</strong>, <strong>Cactus</strong>, or <strong>Strawberry</strong>.</li>
+                            <li><strong>Nicky</strong> did <em>not</em> receive a sandwich starting with "B", nor one containing eggs.</li>
+                            <li>The one who received <strong>Taskmaster Season 7</strong> must have the <strong>Cuddlefish</strong>, and it isn't <strong>Callie</strong> or <strong>Coco</strong>.</li>
+                        </ol>
+                        
+                        <div class="puzzle-lock-section">
+                            <h3 class="puzzle-lock-title">Now it's time to use the grid to solve the PINK LOCK!</h3>
+                            
+                            <p class="puzzle-lock-instructions">The letters for the lock are:</p>
+                            <ol class="puzzle-lock-letters">
+                                <li>The first letter of Callie's sandwich</li>
+                                <li>The sixth letter of the Cuddlefish cuddler's plant buddo</li>
+                                <li>The first letter of the Taskmaster season 9 fan's crochet comfort item</li>
+                                <li>The fourth letter of the pet who loves Fancy sandwiches</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <section id="dance_puzzle" style="display:none;" class="story-section">
+                    <h2 class="story-title">Dance Puzzle</h2>
+                    <img src="assets/dance_puzzle.png" alt="Dance Puzzle" class="main-photo">
+                </section>
             </main>
             <footer>
                 <div class="footer-links">
-                    <a href="#">Help</a>
+                    <a href="#" id="nav-help">Help</a>
                     <span class="joy-logo">Joy</span>
-                    <a href="#">About</a>
+                    <a href="#" id="nav-about">About</a>
                 </div>
             </footer>
         </div>
         <img src="assets/bottom_design.webp" alt="Bottom Design" class="bottom-design">
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html> 
