@@ -37,6 +37,7 @@ function showSection(section) {
     document.getElementById('cuddlefish_puzzle').style.display = section === 'cuddlefish_puzzle' ? '' : 'none';
     document.getElementById('dance_puzzle').style.display = section === 'dance_puzzle' ? '' : 'none';
     document.getElementById('petsitting_puzzle').style.display = section === 'petsitting_puzzle' ? '' : 'none';
+    document.getElementById('poem_puzzle').style.display = section === 'poem_puzzle' ? '' : 'none';
 
     document.getElementById('nav-home').classList.toggle('active', section === 'home');
     document.getElementById('nav-rsvp').classList.toggle('active', section === 'rsvp');
@@ -48,6 +49,7 @@ function showSection(section) {
     document.getElementById('nav-cuddlefish-puzzle').classList.toggle('active', section === 'cuddlefish_puzzle');
     document.getElementById('nav-dance-puzzle').classList.toggle('active', section === 'dance_puzzle');
     document.getElementById('nav-petsitting-puzzle').classList.toggle('active', section === 'petsitting_puzzle');
+    document.getElementById('nav-poem-puzzle').classList.toggle('active', section === 'poem_puzzle');
 }
 
 document.getElementById('nav-home').addEventListener('click', function (e) {
@@ -89,6 +91,10 @@ document.getElementById('nav-dance-puzzle').addEventListener('click', function (
 document.getElementById('nav-petsitting-puzzle').addEventListener('click', function (e) {
     e.preventDefault();
     showSection('petsitting_puzzle');
+});
+document.getElementById('nav-poem-puzzle').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('poem_puzzle');
 });
 
 // About/Help functionality - run after DOM is loaded

@@ -407,6 +407,18 @@ footer {
     text-decoration: none !important;
 }
 
+/* Make poem puzzle link look like regular text */
+#nav-poem-puzzle {
+    text-decoration: none !important;
+    color: #444 !important;
+    transition: color 0.2s;
+}
+
+#nav-poem-puzzle:hover {
+    color: #444 !important;
+    text-decoration: none !important;
+}
+
 .schedule-map {
     margin: 0 auto;
     max-width: 400px;
