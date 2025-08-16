@@ -38,6 +38,9 @@ function showSection(section) {
     document.getElementById('dance_puzzle').style.display = section === 'dance_puzzle' ? '' : 'none';
     document.getElementById('petsitting_puzzle').style.display = section === 'petsitting_puzzle' ? '' : 'none';
     document.getElementById('poem_puzzle').style.display = section === 'poem_puzzle' ? '' : 'none';
+    document.getElementById('notes_puzzle').style.display = section === 'notes_puzzle' ? '' : 'none';
+    document.getElementById('threads').style.display = section === 'threads' ? '' : 'none';
+    document.getElementById('city_puzzle').style.display = section === 'city_puzzle' ? '' : 'none';
 
     document.getElementById('nav-home').classList.toggle('active', section === 'home');
     document.getElementById('nav-rsvp').classList.toggle('active', section === 'rsvp');
@@ -50,6 +53,8 @@ function showSection(section) {
     document.getElementById('nav-dance-puzzle').classList.toggle('active', section === 'dance_puzzle');
     document.getElementById('nav-petsitting-puzzle').classList.toggle('active', section === 'petsitting_puzzle');
     document.getElementById('nav-poem-puzzle').classList.toggle('active', section === 'poem_puzzle');
+    document.getElementById('nav-threads').classList.toggle('active', section === 'threads');
+    document.getElementById('nav-city-puzzle').classList.toggle('active', section === 'city_puzzle');
 }
 
 document.getElementById('nav-home').addEventListener('click', function (e) {
@@ -95,6 +100,18 @@ document.getElementById('nav-petsitting-puzzle').addEventListener('click', funct
 document.getElementById('nav-poem-puzzle').addEventListener('click', function (e) {
     e.preventDefault();
     showSection('poem_puzzle');
+});
+document.getElementById('nav-notes-puzzle').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('notes_puzzle');
+});
+document.getElementById('nav-threads').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('threads');
+});
+document.getElementById('nav-city-puzzle').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSection('city_puzzle');
 });
 
 // About/Help functionality - run after DOM is loaded

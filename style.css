@@ -383,50 +383,26 @@ footer {
     text-decoration: underline;
 }
 
-/* Make dance puzzle link look like regular text */
-#nav-dance-puzzle {
-    text-decoration: none !important;
-    color: #444 !important;
-    transition: color 0.2s;
-}
-
-#nav-dance-puzzle:hover {
-    color: #444 !important;
-    text-decoration: none !important;
-}
-
-/* Make petsitting puzzle link look like regular text */
-#nav-petsitting-puzzle {
-    text-decoration: none !important;
-    color: #444 !important;
-    transition: color 0.2s;
-}
-
-#nav-petsitting-puzzle:hover {
-    color: #444 !important;
-    text-decoration: none !important;
-}
-
-/* Make poem puzzle link look like regular text */
+/* Make all puzzle links look like regular text */
+#nav-dance-puzzle,
+#nav-petsitting-puzzle,
+#nav-notes-puzzle,
+#nav-cuddlefish-puzzle,
+#nav-threads,
+#nav-city-puzzle,
 #nav-poem-puzzle {
     text-decoration: none !important;
-    color: #444 !important;
-    transition: color 0.2s;
-}
-
-#nav-poem-puzzle:hover {
-    color: #444 !important;
-    text-decoration: none !important;
-}
-
-/* Make travel photo link look like regular text */
-#nav-cuddlefish-puzzle-photo {
-    text-decoration: none !important;
     color: inherit !important;
-    display: block;
+    cursor: pointer;
 }
 
-#nav-cuddlefish-puzzle-photo:hover {
+#nav-dance-puzzle:hover,
+#nav-petsitting-puzzle:hover,
+#nav-notes-puzzle:hover,
+#nav-cuddlefish-puzzle:hover,
+#nav-threads:hover,
+#nav-city-puzzle:hover,
+#nav-poem-puzzle:hover {
     color: inherit !important;
     text-decoration: none !important;
 }
