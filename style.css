@@ -419,6 +419,18 @@ footer {
     text-decoration: none !important;
 }
 
+/* Make travel photo link look like regular text */
+#nav-cuddlefish-puzzle-photo {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+}
+
+#nav-cuddlefish-puzzle-photo:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
 .schedule-map {
     margin: 0 auto;
     max-width: 400px;
