@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://customstrandsnyt.com/static/messages.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://customstrandsnyt.com/static/authentication.css" type="text/css" media="all">
+
+  <link rel="stylesheet" href="https://customstrandsnyt.com/static/links.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://customstrandsnyt.com/static/play.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://customstrandsnyt.com/static/ads.css" type="text/css" media="all">
+  <script src="canvas_util.js"></script>
+  <script src="play_events.js"></script>
+  <script src="play_generate_table.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <span id="spangram" hidden>Providence</span>
+    <span id="spangramloc" hidden>1|8|9|16|15|21|27|32|37|43</span>
+    <span id="words" hidden>clams|fedhill|loot|foxpoint|dels|mosesbrown</span>
+    <span id="loc"
+      hidden>42|36|30|31|24|25|26|20|14|19|18|12|13|7|6|0|34|28|33|40|39|38|44|45|46|47|41|35|29|22|23|17|10|11|5|4|3|2</span>
+    <span id="url" hidden>WillYouCoreyMe-ACommonThread-Again</span>
+    <input type="hidden" name="csrfmiddlewaretoken"
+      value="e4VaOQv9RUG5Kvexiye90bEY21ITVrDxCaKSryZALAIH3mT0BBl2eXNQizHKx7sT">
+
+    <div class="centered text-center">
+      <br>
+      <div class="theme-card">
+        <span class="theme-title">THEME</span>
+        <div class="theme-content" id="theme">A Common Thread<br>Blue and White Lock</div>
+      </div>
+    </div>
+
+    <div class="centered">
+      <table id="table" class="table text-center table-borderless table-sm square-table h4">
+      </table>
+    </div>
+
+    <canvas id="selectedCanvas"></canvas>
+    <canvas id="permanentCanvas"></canvas>
+    <canvas id="hoverCanvas"></canvas>
+    <canvas id="tempCanvas"></canvas>
+    <div class="info-text">
+      <span id="selected" class="h5"></span>
+    </div>
+    <div class="info-text">
+      Found <span id="currentlyFound"></span>/<span id="totalWords"></span> Words
+    </div>
+    <div hidden class="centered" id="color-switch-div">
+      <div class="form-group custom-control custom-switch" style="margin-bottom: 0px">
+        <input type="checkbox" class="custom-control-input" id="color_switch" name="color" />
+        <label class="custom-control-label" for="color_switch">Multicolor Mode</label>
+      </div>
+    </div>
+    <div class="centered">
+      <button hidden="true" class="btn btn-success" id="hint-button">Get a Hint</button>
+    </div>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
